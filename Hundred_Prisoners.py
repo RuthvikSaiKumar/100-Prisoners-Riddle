@@ -2,6 +2,7 @@ import random
 import math
 
 NO_OF_PRISONERS = 100
+TIMES = 1000
 
 
 def main():
@@ -32,14 +33,13 @@ def main():
 
 if __name__ == "__main__":
     avg = 0
-    times = 1000
-    for x in range(times):
+    for x in range(TIMES):
         c = 0
         for y in range(100):
             if main() == "Free":
                 c += 1
         avg += c
-        print("\r|", "█" * math.ceil(x / times * 100), "=" * math.ceil((times - x - 1) / times * 100), "|",
-              math.ceil(x / times * 100), "% done", end="")
+        print("\r|", "█" * math.ceil(x / TIMES * 100), "=" * math.ceil((TIMES - x - 1) / TIMES * 100), "|",
+              math.ceil(x / TIMES * 100), "% done", end="")
     print()
-    print(f"Average number of times prisoners are freed: {avg / times}%")
+    print(f"Average number of times prisoners are freed: {avg / TIMES}%")
