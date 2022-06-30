@@ -13,7 +13,8 @@ Average number of times prisoners are freed: 30.026%
 
 The value comes close to what was expected by Veritasium.
 
-You can repeat the calculation any number of times to calculate precise average (by changing the `times` variable)
+You can repeat the calculation any number of times to calculate precise average (by changing the `times` variable).<br>
+You can also change the number of prisoners.
 
 Thank you for reading!
 Have a good day :smile:
